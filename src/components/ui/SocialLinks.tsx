@@ -1,12 +1,4 @@
-import {
-  SiDiscord,
-  SiGithub,
-  SiNpm,
-  SiRust,
-  SiSpotify,
-  SiSteam,
-  SiTiktok,
-} from "solid-icons/si";
+import { SiGithub, SiNpm, SiRust, SiSpotify } from "solid-icons/si";
 import { IconTypes } from "solid-icons";
 
 import Link from "./Link";
@@ -24,9 +16,6 @@ export default function SocialLinks() {
       <SocialLink title="Crates.io" href="/crates.io" icon={SiRust} />
       <SocialLink title="NPM" href="/npm" icon={SiNpm} />
       <SocialLink title="Spotify" href="/spotify" icon={SiSpotify} />
-      <SocialLink title="TikTok" href="/tiktok" icon={SiTiktok} />
-      <SocialLink title="Discord" href="/discord" icon={SiDiscord} />
-      <SocialLink title="Steam" href="/steam" icon={SiSteam} />
     </div>
   );
 }

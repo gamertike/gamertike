@@ -128,7 +128,7 @@ function TechCategory(props: TechCategoryProps) {
 
   return (
     <li class="bg-zinc-800 p-6 gap-5 rounded-lg space-y-5">
-      <Link href={`#${id()}`} class="text-white">
+      <Link href={`#${id()}`} class="text-white text-2xl">
         <h3 id={id()}>{props.title}</h3>
       </Link>
       <ul class="flex flex-wrap justify-evenly gap-8">{props.children}</ul>
