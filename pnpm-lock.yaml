@@ -41,9 +41,6 @@ importers:
       "@eslint/js":
         specifier: ^10.0.1
         version: 10.0.1(eslint@10.0.2(jiti@2.6.1))
-      "@types/eslint__js":
-        specifier: ^8.42.3
-        version: 8.42.3
       "@types/node":
         specifier: ^25.3.3
         version: 25.3.3
@@ -56,9 +53,6 @@ importers:
       husky:
         specifier: ^9.1.7
         version: 9.1.7
-      postcss:
-        specifier: ^8.5.6
-        version: 8.5.6
       prettier:
         specifier: ^3.8.1
         version: 3.8.1
@@ -1760,18 +1754,6 @@ packages:
     resolution:
       {
         integrity: sha512-SQFof9H+LXeWNz8wDe7oN5zu7ket0qwMu5vZubW4GCJ8Kkeh6nBWUz87+KTz/G3Kqsrp0j/W253XJb3KMEeg3w==,
-      }
-
-  "@types/eslint@9.6.1":
-    resolution:
-      {
-        integrity: sha512-FXx2pKgId/WyYo2jXw63kk7/+TY7u7AziEJxJAnSFzHlqTAS3Ync6SvgYAN/k4/PQpnnVuzoMuVnByKK2qp0ag==,
-      }
-
-  "@types/eslint__js@8.42.3":
-    resolution:
-      {
-        integrity: sha512-alfG737uhmPdnvkrLdZLcEKJ/B8s9Y4hrZ+YAdzUeoArBlSUERA2E87ROfOaS4jd/C45fzOoZzidLc1IPwLqOw==,
       }
 
   "@types/esrecurse@4.3.1":
@@ -6625,15 +6607,6 @@ snapshots:
       "@babel/types": 7.29.0
 
   "@types/braces@3.0.5": {}
-
-  "@types/eslint@9.6.1":
-    dependencies:
-      "@types/estree": 1.0.8
-      "@types/json-schema": 7.0.15
-
-  "@types/eslint__js@8.42.3":
-    dependencies:
-      "@types/eslint": 9.6.1
 
   "@types/esrecurse@4.3.1": {}
 
