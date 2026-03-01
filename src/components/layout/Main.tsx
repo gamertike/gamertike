@@ -6,7 +6,7 @@ import TypeWriter from "../ui/TypeWriter";
 
 export default function Main() {
   return (
-    <main class="flex-grow p-8 max-w-5xl w-full mx-auto">
+    <main class="grow p-8 max-w-5xl w-full mx-auto">
       <div class="flex flex-col lg:flex-row items-center gap-5">
         <Title />
         <CurrentlyPlaying class="w-full lg:w-3/5" />
@@ -41,7 +41,7 @@ export default function Main() {
 
 function Title() {
   return (
-    <h1 class="text-4xl sm:text-5xl text-center flex-grow">
+    <h1 class="text-4xl sm:text-5xl text-center grow">
       Hey, im
       <br />
       <Link href="/github">

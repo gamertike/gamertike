@@ -1,5 +1,5 @@
 import {
-  SiCss3,
+  SiCss,
   SiDeno,
   SiDiscord,
   SiGit,
@@ -17,9 +17,9 @@ import {
   SiTailwindcss,
   SiTauri,
   SiTypescript,
-  SiVisualstudiocode,
   SiVite,
 } from "solid-icons/si";
+import { VsVscode } from "solid-icons/vs";
 import { JSX } from "solid-js";
 import { IconTypes } from "solid-icons";
 
@@ -43,7 +43,7 @@ export default function Technologies() {
         <Technology
           title="Visual Studio Code"
           href="https://code.visualstudio.com"
-          icon={SiVisualstudiocode}
+          icon={VsVscode}
         />
         <Technology title="GIT" href="https://git-scm.com" icon={SiGit} />
         <Technology title="GitHub" href="https://github.com" icon={SiGithub} />
@@ -64,11 +64,7 @@ export default function Technologies() {
           href="https://w3schools.com/html"
           icon={SiHtml5}
         />
-        <Technology
-          title="CSS"
-          href="https://w3schools.com/css"
-          icon={SiCss3}
-        />
+        <Technology title="CSS" href="https://w3schools.com/css" icon={SiCss} />
         <Technology
           title="JavaScript"
           href="https://javascript.com"
@@ -127,7 +123,7 @@ function TechCategory(props: TechCategoryProps) {
   const id = () => props.title.replaceAll(" ", "-").toLowerCase();
 
   return (
-    <li class="bg-zinc-800 p-6 gap-5 rounded-lg space-y-5">
+    <li class="bg-zinc-800 p-6 rounded-lg flex flex-col gap-5">
       <Link href={`#${id()}`} class="text-white text-2xl">
         <h3 id={id()}>{props.title}</h3>
       </Link>

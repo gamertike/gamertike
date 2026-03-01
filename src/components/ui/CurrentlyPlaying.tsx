@@ -31,7 +31,7 @@ export default function CurrentlyPlaying(
         <div class="relative min-w-20 h-20">
           <img
             class="w-full h-full rounded-md select-none pointer-events-none shadow-2xl"
-            classList={{ "blur-sm": !currentlyPlaying()!.isPlaying }}
+            classList={{ "blur-xs": !currentlyPlaying()!.isPlaying }}
             src={currentlyPlaying()!.albumImageUrl}
             alt="Album image"
           />
@@ -40,7 +40,7 @@ export default function CurrentlyPlaying(
           </Show>
         </div>
       </Show>
-      <div class="flex-grow flex flex-col justify-between">
+      <div class="grow flex flex-col justify-between">
         <Show
           when={currentlyPlaying()}
           fallback={

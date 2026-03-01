@@ -1,4 +1,5 @@
 import { defineConfig } from "@solidjs/start/config";
+import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   solid: {
@@ -15,5 +16,8 @@ export default defineConfig({
       "/npm": { redirect: "https://npmjs.com/~gamertike" },
       "/spotify": { redirect: "https://open.spotify.com/user/danbff203" },
     },
+  },
+  vite: {
+    plugins: [tailwindcss()],
   },
 });
